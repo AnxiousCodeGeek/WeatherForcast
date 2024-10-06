@@ -15,29 +15,6 @@ Original file is located at
 
 !pip install plotly
 
-from opencage.geocoder import OpenCageGeocode
-from google.colab import userdata
-
-# Function to get latitude and longitude using OpenCage API
-def get_lat_lon_opencage(location_name):
-    key = userdata.get('GEO_KEY')  # Get your OpenCage API key from Colab secrets
-    geocoder = OpenCageGeocode(key)
-    result = geocoder.geocode(location_name)
-    if result and len(result):
-        return result[0]['geometry']['lat'], result[0]['geometry']['lng']
-    else:
-        print("Location not found.")
-        return None, None
-
-# Example usage:
-location_name = input("Enter your location: ")
-lat, lon = get_lat_lon_opencage(location_name)
-
-if lat and lon:
-    print(f"Latitude: {lat}, Longitude: {lon}")
-else:
-    print("Could not retrieve location data.")
-
 import os
 
 # Set your username and password
