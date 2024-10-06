@@ -41,8 +41,8 @@ else:
 import os
 
 # Set your username and password
-os.environ['METEOMATICS_USERNAME'] = 'nationalcenterofartificialintelligencesmartcitylab_saud_fatima'
-os.environ['METEOMATICS_PASSWORD'] = 'Dbt8FJl71q'
+os.environ['METEOMATICS_USERNAME'] = 'nasaspacechallenge_aliens_earthie'
+os.environ['METEOMATICS_PASSWORD'] = 'jDh9W2p5K4'
 
 import requests
 from opencage.geocoder import OpenCageGeocode
